@@ -27,5 +27,7 @@ steps:
 
 - task: VSTest@2
   inputs:
+    command: test
+    projects: '**/*Tests/*.csproj'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
